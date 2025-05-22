@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home"> <fragment
+    android:id="@+id/navigation_home"
+    android:name="com.example.sufragio.ui.home.HomeFragment" android:label="홈"
+    tools:layout="@layout/fragment_home" /> <fragment
+    android:id="@+id/navigation_search"
+    android:name="com.example.sufragio.ui.search.SearchFragment" android:label="검색"
+    tools:layout="@layout/fragment_search" /> <fragment
+    android:id="@+id/navigation_creation"
+    android:name="com.example.sufragio.ui.creation.CreationFragment" android:label="생성"
+    tools:layout="@layout/fragment_creation" /> <fragment
+    android:id="@+id/navigation_list"
+    android:name="com.example.sufragio.ui.list.ListFragment" android:label="목록"
+    tools:layout="@layout/fragment_list" /> <fragment
+    android:id="@+id/navigation_mypage"
+    android:name="com.example.sufragio.ui.mypage.MyPageFragment" android:label="마이"
+    tools:layout="@layout/fragment_mypage" /> </navigation>

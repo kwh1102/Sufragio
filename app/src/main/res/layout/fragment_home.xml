@@ -1,0 +1,100 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="120dp">
+
+        <ImageView
+            android:id="@+id/homeLogo"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/only" />
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="수프라지우에 오신 닉네임님 환영합니다!"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="@drawable/radius_back"
+            android:elevation="3dp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="인기 투표 💕"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/menuText"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/popularVoteRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="최신 투표 🤩"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/menuText"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recentVoteRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="종료 임박 투표 😯"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/menuText"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dueVoteRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="false"/>
+
+        <ImageView
+            android:layout_width="131dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/dreamer" />
+
+    </LinearLayout>
+</ScrollView>

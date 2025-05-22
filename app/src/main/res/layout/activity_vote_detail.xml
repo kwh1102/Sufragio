@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="24dp"
+    android:paddingBottom="12dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="뒤로가기"
+            android:src="@drawable/ic_back"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:id="@+id/textDetailEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="투표 종료됨"
+            android:textSize="16sp"
+            android:textColor="#970707"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:id="@+id/textDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="제목"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"/>
+        <TextView
+            android:id="@+id/textDetailCreator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="생성자 • 생성일"
+            android:textSize="14sp"
+            android:textColor="#545454"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:id="@+id/textDetailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="설명"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:id="@+id/textDetailParticipants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="참여자"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:id="@+id/textDetailDeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="마감일"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:id="@+id/textDetailMultiple"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:text="다중 선택"
+            android:textSize="16sp"
+            android:textColor="#6750A4"
+            android:background="@drawable/radius_back"
+            android:elevation="4dp"
+            android:padding="5dp"
+            android:layout_marginTop="14dp"/>
+
+        <LinearLayout
+            android:id="@+id/voteOptionGroupContainer"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@drawable/radius_back"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:layout_marginTop="18dp"/>
+        <Button
+            android:id="@+id/btnAddOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ 항목 추가"
+            android:backgroundTint="#E7E7E7"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:id="@+id/voteResultContainer"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@drawable/radius_back"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:layout_marginTop="18dp"
+            android:visibility="gone"/>
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="370dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btnSubmitVote"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="투표하기"
+            android:layout_marginTop="16dp" />
+        <Button
+            android:id="@+id/btnDelVote"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="투표 삭제"
+            android:backgroundTint="#B62929"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>

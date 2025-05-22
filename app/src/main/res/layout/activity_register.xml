@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp">
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp"
+        android:contentDescription="뒤로가기"
+        android:src="@drawable/ic_back" />
+    <LinearLayout
+        android:id="@+id/registerFormLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/backButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:text="회원가입"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/idInput"
+            android:hint="아이디"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/nicknameInput"
+            android:hint="닉네임"
+            android:inputType="text"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/loginInfo"
+            android:text="비밀번호는 특수 문자, 숫자를 포함하여 8자 이상"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="@drawable/radius_back"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/registerButton"
+            android:text="회원가입"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/goToLogin"
+            android:text="계정이 있으신가요? 로그인"
+            android:textColor="@color/purple_500"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</RelativeLayout>

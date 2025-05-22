@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="235dp"
+        android:layout_height="185dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/letter" />
+
+    <ImageView
+        android:id="@+id/creatorImage"
+        android:layout_width="165dp"
+        android:layout_height="103dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/dreamer" />
+</RelativeLayout>

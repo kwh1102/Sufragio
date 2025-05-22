@@ -1,0 +1,155 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="24dp"
+    android:padding="18dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textMyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="투표 생성 💡"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/menuText"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxStrokeColor="#6200EE"
+            app:hintEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTitle"
+                android:hint="투표 제목"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editDescription"
+                android:hint="투표 설명 (선택)"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:padding="10dp"
+            android:background="@drawable/stroke_radius_back">
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchAnonymous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="익명 투표"
+                android:textSize="15sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="4dp"
+                app:trackTint="@color/switch_track_color"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchMultiple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="다중 선택 허용"
+                android:textSize="15sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="4dp"
+                app:trackTint="@color/switch_track_color"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="항목 추가 허용"
+                android:textSize="15sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="4dp"
+                app:trackTint="@color/switch_track_color"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="항목"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="2dp"/>
+        <LinearLayout
+            android:id="@+id/optionsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnAddOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E7E7E7"
+            android:textColor="@color/black"
+            android:text="+ 항목 추가"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="마감일"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="2dp"/>
+
+        <EditText
+            android:id="@+id/deadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="클릭하여 선택"
+            android:focusable="false"
+            android:clickable="true"
+            />
+
+
+        <Button
+            android:id="@+id/createVoteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="투표 생성"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="110dp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>
