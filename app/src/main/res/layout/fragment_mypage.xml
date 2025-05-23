@@ -89,5 +89,5 @@
         android:paddingLeft="6dp"
         android:paddingRight="6dp"
         android:paddingTop="8dp"
-        android:paddingBottom="110dp"/>
+        android:paddingBottom="80dp"/>
 </LinearLayout>
