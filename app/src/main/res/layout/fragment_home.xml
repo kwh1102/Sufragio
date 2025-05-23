@@ -14,7 +14,7 @@
             android:layout_width="110dp"
             android:layout_height="40dp"
             android:layout_gravity="start"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"
             android:src="@drawable/only" />
 
@@ -46,7 +46,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/popularVoteRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="190dp"
+            android:layout_height="match_parent"
             android:layout_marginTop="8dp"
             android:overScrollMode="never"
             android:nestedScrollingEnabled="false"/>
@@ -64,7 +64,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recentVoteRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="190dp"
+            android:layout_height="match_parent"
             android:layout_marginTop="8dp"
             android:overScrollMode="never"
             android:nestedScrollingEnabled="false"/>
@@ -82,7 +82,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/dueVoteRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="190dp"
+            android:layout_height="200dp"
             android:layout_marginTop="8dp"
             android:overScrollMode="never"
             android:nestedScrollingEnabled="false"/>
