@@ -36,3 +36,6 @@
 - 5/19: 홈 페이지에 참여자, 생성일, 마감일을 고려하여 실제 투표 item 연동
 - 5/21: 항목 추가 허용 기능 추가, Onboarding Activity UI 수정, refresh_token도 로그인할 때마다 새로 발급받도록 수정
 - 5/22 ~ 5/23: 전반적인 UI 개선, 화면 짤림 이슈 및 기타 버그 수정
+## 📃 To Do
+- MVVM 구조 적용
+- Jetpack Compose 마이그레이션
