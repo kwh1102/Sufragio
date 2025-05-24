@@ -131,7 +131,7 @@ class CreationFragment : Fragment() {
 
                         response = RetrofitClient.instance.createPoll(
                             authHeader = "Bearer $accessToken",
-                            title = titleEditText.text.toString(),
+                            title = combinedTitle,
                             description = descriptionEditText.text.toString(),
                             isAnonymous = anonymousSwitch.isChecked,
                             isMultipleChoice = multipleSwitch.isChecked,

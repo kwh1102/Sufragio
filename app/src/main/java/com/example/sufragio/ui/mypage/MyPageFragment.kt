@@ -25,8 +25,6 @@ import com.example.sufragio.SplashActivity.Companion.EXTRA_SHOW_LOGIN_INFO
 import com.example.sufragio.network.RetrofitClient
 import com.example.sufragio.network.TokenManager
 import com.example.sufragio.ui.detail.VoteDetailActivity
-import com.example.sufragio.ui.mypage.Vote
-import com.example.sufragio.ui.mypage.VoteAdapter
 import com.example.sufragio.ui.login_register.LoginActivity
 import com.google.android.material.tabs.TabLayout
 import kotlinx.coroutines.launch

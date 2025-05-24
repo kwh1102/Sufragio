@@ -9,7 +9,7 @@ class LauncherActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val prefs = getSharedPreferences("prefs", MODE_PRIVATE)
+        val prefs = getSharedPreferences("app_prefs", MODE_PRIVATE)
         val onboardingShown = prefs.getBoolean("onboardingShown", false)
 
         if (onboardingShown) {
